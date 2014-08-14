@@ -1,5 +1,19 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  .login-container
+    .login
+      h1.logo 東方樂知
+      h3.subtitle 登录
+      .ui.left.icon.input.login-item
+        input(id="login-email", placeholder="邮箱")
+        i.mail.icon
+      br
+      .ui.left.icon.input.login-item
+        input(id="login-password", type="password", placeholder="密码")
+        i.lock.icon
+      br
+      a(href="#", id="login-submit").ui.button.lezhi-button.login-item 登录
+
+block pageStylesheets
+  link(rel='stylesheet', href='/stylesheets/login.css')

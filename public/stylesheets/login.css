@@ -1,0 +1,13 @@
+html {
+  background-color: #ffb300;
+}
+html .login-container {
+  background-color: #eee;
+  border-radius: 5px;
+  webkit-border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.25);
+  -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.25);
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 0px 50px;
+}

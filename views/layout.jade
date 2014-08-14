@@ -2,6 +2,19 @@ doctype html
 html
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/main.css')
+    link(rel='stylesheet', href='/libs/css/semantic.min.css')
+    block pageStylesheets
+
   body
-    block content
+    if (user)
+      .ui.main.menu.fixed.transparent.inverted#lezhi-nav(ng-hide="controlFlag.isLoginPage")
+        .container
+          .title.item
+            span 东方乐知
+    .page
+      block content
+
+    script(src='/libs/js/jquery.min.js')
+    script(src='/libs/js/semantic.min.js')
+    block pageScripts
