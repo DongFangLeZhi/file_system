@@ -11,3 +11,7 @@ html .login-container {
   -webkit-box-sizing: border-box;
   padding: 0px 50px;
 }
+html .login-container .errorMessage {
+  display: none;
+  color: #f00;
+}

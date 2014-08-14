@@ -6,10 +6,12 @@ var cookieParser = require('cookie-parser');
 var session = require('express-session');
 var bodyParser = require('body-parser');
 var errorhandler = require('errorhandler');
+var mongoose = require('mongoose');
 var routes = require('./routes/index');
 var api = require('./routes/endpoints/api')
 var app = express();
 
+mongoose.connect("mongodb://localhost/lezhi_DB");
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');

@@ -7,13 +7,13 @@ exports.login = function(req, res){
   var password = md5.update(req.body.password).digest("base64");
   User.findOne({email:email}, function(err, user){
     if(!user){
-      return res.json({code:111, message:"用户不存在，检查用户名是否正确。"});
+      return res.send({code:111, message:"用户不存在，检查用户名是否正确。"});
     }
     if(user.password != password){
-      return res.json({code:112, message:"用户名与密码不相符。"});
+      return res.send({code:112, message:"用户名与密码不相符。"});
     }
     req.session.user = user;
-    return res.json({code:200, message:"登录成功!", user: {email: user.email, clearance: user.clearance}});
+    return res.send({code:200, message:"登录成功!", user: {email: user.email, clearance: user.clearance}});
   });
 }
 
