@@ -26,15 +26,6 @@ app.use(session({
     saveUninitialized:true,
     cookie:{}
 }))
-
-app.use(function (req, res, next) {
-    var err, succ, user;
-    user = req.session.user;
-    res.locals.user = user ? user : null;
-    res.locals.succ = succ.length ? succ : null;
-    res.locals.err = err.length ? err : null;
-    next();
-});
 app.use('/', routes);
 app.use('/api/', api);
 /// catch 404 and forward to error handler
