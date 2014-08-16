@@ -17,6 +17,7 @@ $(document).ready(function(){
       }else{
         $('.login-container').fadeOut(400, function(){
           $('.login-container').remove();
+          window.location = '/home';
         })
       }
     });

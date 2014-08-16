@@ -1,3 +1,10 @@
+html {
+  height: 100%;
+  background-color: #eb593c;
+}
+a {
+  text-decoration: none;
+}
 body {
   height: 100%;
   padding: 0;
@@ -5,11 +12,53 @@ body {
   width: 100%;
 }
 body #lezhi-nav {
-  background-color: #ff8f00;
+  background-color: #eb593c;
 }
 body #lezhi-nav .item {
-  color: #000;
+  color: #fffcec;
   padding: 0.55em 0.9em;
+  margin: 5px 10px;
+}
+body #lezhi-nav .left {
+  margin-left: 100px;
+}
+.nav-logo {
+  position: relative;
+}
+.nav-logo:before {
+  position: absolute;
+  content: "乐知";
+}
+.logo {
+  background: #fffcec;
+  float: left;
+  height: 90px;
+  position: relative;
+  width: 80px;
+}
+.lezhi-title {
+  color: #eb593c;
+  text-align: center;
+  display: block;
+  font-size: 25px;
+  padding-top: 6px;
+}
+.ribbon:after,
+.ribbon:before {
+  border-top: 20px solid #fffcec;
+  bottom: -20px;
+  content: '';
+  height: 0;
+  position: absolute;
+  width: 0;
+}
+.ribbon:after {
+  border-right: 40px solid transparent;
+  left: 0;
+}
+.ribbon:before {
+  border-left: 40px solid transparent;
+  right: 0;
 }
 .container {
   margin: 0 15%;
@@ -35,21 +84,21 @@ body #lezhi-nav .item {
 .login-container .login {
   height: 400px;
   width: 360px;
-  color: #ff8f00;
+  color: #eb593c;
 }
 .login-container .login .login-item {
-  color: #ff8f00;
+  color: #eb593c;
   margin-top: 10px;
   width: 100%;
 }
 .ui.button.lezhi-button {
-  background-color: #ff8f00;
+  background-color: #eb593c;
   color: #fff;
 }
 .ui.button.lezhi-button:hover {
   color: #e0e0e0;
 }
-.logo {
+.login-logo {
   font-weight: 500px;
   font-size: 3em;
 }

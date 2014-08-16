@@ -13,6 +13,10 @@ exports.login = function(req, res){
       return res.send({code:112, message:"用户名与密码不相符。"});
     }
     req.session.user = user;
+    req.session.sUser = {
+      email:user.email,
+      clearance: user.clearance
+    }
     return res.send({code:200, message:"登录成功!", user: {email: user.email, clearance: user.clearance}});
   });
 }

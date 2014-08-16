@@ -1,7 +1,4 @@
-html {
-  background-color: #ffb300;
-}
-html .login-container {
+.login-container {
   background-color: #eee;
   border-radius: 5px;
   webkit-border-radius: 5px;
@@ -11,7 +8,7 @@ html .login-container {
   -webkit-box-sizing: border-box;
   padding: 0px 50px;
 }
-html .login-container .errorMessage {
+.login-container .errorMessage {
   display: none;
   color: #f00;
 }

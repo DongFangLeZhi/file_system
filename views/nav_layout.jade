@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/main.css')
+    link(rel='stylesheet', href='/libs/css/semantic.min.css')
+    block pageStylesheets
+
+  body
+    .ui.main.menu.fixed.transparent.inverted#lezhi-nav(ng-hide="controlFlag.isLoginPage")
+      .container
+        a.logo.ribbon(href="/")
+          span.lezhi-title 乐知
+          span.lezhi-title 文件
+        .left
+          a.item(href="/home")
+            最新上传
+          a.item(href="/profile/#{user.email}")
+            个人主页
+    .page
+      block content
+
+    script(src='/libs/js/jquery.min.js')
+    script(src='/libs/js/semantic.min.js')
+    block pageScripts

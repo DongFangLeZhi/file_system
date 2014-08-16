@@ -1,3 +1,17 @@
+lezhi-blue = #abdcd6
+lezhi-red = #eb593c
+lezhi-light-yellow = #fffcec
+
+html
+  height 100%
+  background-color lezhi-red
+//  background-image linear-gradient(lezhi-blue, lezhi-light-yellow)
+//  background-image -webkit-linear-gradient(lezhi-blue, lezhi-light-yellow)
+//  background-repeat no-repeat
+
+a
+  text-decoration: none;
+
 body
   height 100%
   padding 0
@@ -5,11 +19,55 @@ body
   width 100%
 
   #lezhi-nav
-    background-color #ff8f00
+    background-color lezhi-red
 
     .item
-      color #000000
+      color lezhi-light-yellow
       padding .55em .90em
+      margin 5px 10px
+
+    .left
+      margin-left 100px
+
+.nav-logo
+  position relative
+
+  &:before
+    position absolute
+    content "乐知"
+
+
+.logo
+    background lezhi-light-yellow
+    float left
+    height 90px
+    position relative
+    width 80px
+
+  .lezhi-title
+    color lezhi-red
+    text-align center
+    display block
+    font-size 25px
+    padding-top 6px
+
+.ribbon
+  &:after
+  &:before
+    border-top 20px solid lezhi-light-yellow
+    bottom -20px
+    content ''
+    height 0
+    position absolute
+    width 0
+
+  &:after
+    border-right 40px solid transparent
+    left 0
+
+  &:before
+    border-left 40px solid transparent
+    right 0
 
 .container
   margin 0 15%
@@ -35,20 +93,20 @@ body
   .login
     height 400px
     width 360px
-    color #ff8f00
+    color lezhi-red
 
     .login-item
-      color #ff8f00
+      color lezhi-red
       margin-top 10px
       width 100%
 
 .ui.button.lezhi-button
-  background-color #ff8f00
+  background-color #eb593c
   color #ffffff
   &:hover
     color #e0e0e0
 
-.logo
+.login-logo
   font-weight 500px;
   font-size 3em;
 
