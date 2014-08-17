@@ -27,6 +27,17 @@ body #lezhi-nav .item:hover {
 body #lezhi-nav .item:hover .item-text {
   border-bottom: solid 2px #fffcec;
 }
+body #lezhi-nav .nav-search .nav-search-input {
+  background-color: #eb593c;
+  border: solid 2px #fffcec;
+  color: #fffcec;
+}
+body #lezhi-nav .nav-search .nav-search-input::-webkit-input-placeholder {
+  color: #fffcec;
+}
+body #lezhi-nav .nav-search .nav-search-icon {
+  color: #fffcec;
+}
 .nav-logo {
   position: relative;
 }

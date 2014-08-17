@@ -18,19 +18,19 @@ html
             span.item-text
               i.icon.cloud.upload.
               最新上传
-          a.item(href="/profile/#{user.email}")
+          a.item
             span.item-text
-              i.icon.user
-              个人主页
+              i.icon.upload
+              上传文件
           .right.menu
-            .ui.dropdown.item
+            .item
+              .ui.icon.input.nav-search
+                input.nav-search-input(type='text', placeholder='搜索...')
+                i.icon.search.link.nav-search-icon
+            a.item(href="/profile/#{user.email}")
               span.item-text
-                文件管理
-                i.icon.down.arrow
-              .menu
-                a.item
-                  i.icon.search
-                  搜索文件
+                i.icon.user
+                个人主页
     .page
       block content
 
