@@ -13,22 +13,26 @@ a
   text-decoration: none;
 
 body
-  height 100%
   padding 0
   margin 0
-  width 100%
 
   #lezhi-nav
     background-color lezhi-red
+    height 42px
+    overflow visiable
 
     .item
       color lezhi-light-yellow
-      padding .55em .90em
-      margin 5px 10px
+      padding 20px 30px 10px 30px
 
-    .left
-      margin-left 100px
+      .item-text
+        padding-bottom 2px
 
+      &:hover
+        background-color lezhi-red
+
+        .item-text
+          border-bottom solid 2px lezhi-light-yellow
 .nav-logo
   position relative
 
@@ -36,20 +40,21 @@ body
     position absolute
     content "乐知"
 
-
 .logo
     background lezhi-light-yellow
     float left
-    height 90px
+    height 80px
     position relative
     width 80px
+
+  .title-text
+    padding-top 6px
 
   .lezhi-title
     color lezhi-red
     text-align center
     display block
     font-size 25px
-    padding-top 6px
 
 .ribbon
   &:after

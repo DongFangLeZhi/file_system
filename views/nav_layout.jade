@@ -7,16 +7,30 @@ html
     block pageStylesheets
 
   body
-    .ui.main.menu.fixed.transparent.inverted#lezhi-nav(ng-hide="controlFlag.isLoginPage")
+    .ui.main.inverted.menu#lezhi-nav
       .container
-        a.logo.ribbon(href="/")
-          span.lezhi-title 乐知
-          span.lezhi-title 文件
-        .left
+        .menu
+          a.logo.ribbon(href="/")
+            .title-text
+              span.lezhi-title 乐知
+              span.lezhi-title 文件
           a.item(href="/home")
-            最新上传
+            span.item-text
+              i.icon.cloud.upload.
+              最新上传
           a.item(href="/profile/#{user.email}")
-            个人主页
+            span.item-text
+              i.icon.user
+              个人主页
+          .right.menu
+            .ui.dropdown.item
+              span.item-text
+                文件管理
+                i.icon.down.arrow
+              .menu
+                a.item
+                  i.icon.search
+                  搜索文件
     .page
       block content
 

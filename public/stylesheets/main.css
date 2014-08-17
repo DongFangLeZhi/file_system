@@ -6,21 +6,26 @@ a {
   text-decoration: none;
 }
 body {
-  height: 100%;
   padding: 0;
   margin: 0;
-  width: 100%;
 }
 body #lezhi-nav {
   background-color: #eb593c;
+  height: 42px;
+  overflow: visiable;
 }
 body #lezhi-nav .item {
   color: #fffcec;
-  padding: 0.55em 0.9em;
-  margin: 5px 10px;
+  padding: 20px 30px 10px 30px;
 }
-body #lezhi-nav .left {
-  margin-left: 100px;
+body #lezhi-nav .item .item-text {
+  padding-bottom: 2px;
+}
+body #lezhi-nav .item:hover {
+  background-color: #eb593c;
+}
+body #lezhi-nav .item:hover .item-text {
+  border-bottom: solid 2px #fffcec;
 }
 .nav-logo {
   position: relative;
@@ -32,16 +37,18 @@ body #lezhi-nav .left {
 .logo {
   background: #fffcec;
   float: left;
-  height: 90px;
+  height: 80px;
   position: relative;
   width: 80px;
+}
+.title-text {
+  padding-top: 6px;
 }
 .lezhi-title {
   color: #eb593c;
   text-align: center;
   display: block;
   font-size: 25px;
-  padding-top: 6px;
 }
 .ribbon:after,
 .ribbon:before {
