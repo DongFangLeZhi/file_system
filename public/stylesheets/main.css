@@ -18,6 +18,9 @@ body #lezhi-nav .item {
   color: #fffcec;
   padding: 20px 30px 10px 30px;
 }
+body #lezhi-nav .item .icon {
+  opacity: 1;
+}
 body #lezhi-nav .item .item-text {
   padding-bottom: 2px;
 }
@@ -33,6 +36,15 @@ body #lezhi-nav .nav-search .nav-search-input {
   color: #fffcec;
 }
 body #lezhi-nav .nav-search .nav-search-input::-webkit-input-placeholder {
+  color: #fffcec;
+}
+body #lezhi-nav .nav-search .nav-search-input:-moz-placeholder {
+  color: #fffcec;
+}
+body #lezhi-nav .nav-search .nav-search-input::-moz-placeholder {
+  color: #fffcec;
+}
+body #lezhi-nav .nav-search .nav-search-input:-ms-input-placeholder {
   color: #fffcec;
 }
 body #lezhi-nav .nav-search .nav-search-icon {
