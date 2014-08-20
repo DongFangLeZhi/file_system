@@ -1,0 +1,44 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/main.css')
+    link(rel='stylesheet', href='/libs/css/semantic.min.css')
+    block pageStylesheets
+
+  body
+    .ui.main.inverted.menu#lezhi-nav
+      .container
+        .menu
+          a.logo.ribbon(href="/")
+            .title-text
+              span.lezhi-title 乐知
+              span.lezhi-title 文件
+          a.item(href="/home")
+            span.item-text
+              i.icon.cloud.upload
+              最新上传
+          .item#upload
+            span.item-text
+              i.icon.upload
+              上传文件
+          .right.menu
+            .item
+              .ui.fluid.icon.input.nav-search
+                input.nav-search-input(type='text', placeholder='搜索...')
+                i.icon.search.link.nav-search-icon
+            a.item(href="/profile/#{user.email}")
+              span.item-text
+                i.icon.user
+                个人主页
+
+    .page
+      block content
+
+    include ./upload_sidebar.jade
+
+    script(src='/libs/js/jquery.min.js')
+    script(src='/libs/js/semantic.min.js')
+    script(src='/javascripts/nav_controller.js')
+    script(src='/javascripts/file_input_controller.js')
+    block pageScripts

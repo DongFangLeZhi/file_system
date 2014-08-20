@@ -1,0 +1,10 @@
+.ui.styled.sidebar#upload-sidebar
+  h3.ui.header 上传文件
+  .ui.form#file-upload-form
+    .field
+      .lezhi-input-label 选择文件
+      .ui.action.input
+        input.lezhi-file-input-name#lezhi-file-upload-name(type='text', disabled)
+        label(for='lezhi-file-upload').ui.icon.button.lezhi-button.lezhi-file-btn
+          i.icon.file
+          input(type='file', style='display:none', name='lezhi-file-upload').lezhi-file-input#lezhi-file-upload

@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/main.css')
+    link(rel='stylesheet', href='/libs/css/semantic.min.css')
+    block pageStylesheets
+
+  body
+    .page
+      block content
+
+    script(src='/libs/js/jquery.min.js')
+    script(src='/libs/js/semantic.min.js')
+    block pageScripts
