@@ -16,24 +16,38 @@ html
               span.lezhi-title 文件
           a.item(href="/home")
             span.item-text
-              i.icon.cloud.upload.
+              i.icon.cloud.upload
               最新上传
-          a.item
+          .item#upload
             span.item-text
               i.icon.upload
               上传文件
           .right.menu
             .item
-              .ui.icon.input.nav-search
+              .ui.fluid.icon.input.nav-search
                 input.nav-search-input(type='text', placeholder='搜索...')
                 i.icon.search.link.nav-search-icon
             a.item(href="/profile/#{user.email}")
               span.item-text
                 i.icon.user
                 个人主页
+
     .page
       block content
 
+    .ui.styled.sidebar#upload-sidebar
+      h3.ui.header 上传文件
+      .ui.form#file-upload-form
+        .field
+          .lezhi-input-label 选择文件
+          .ui.action.input
+            input.lezhi-file-input-name#lezhi-file-upload-name(type='text', disabled)
+            label(for='lezhi-file-upload').ui.icon.button.lezhi-button.lezhi-file-btn
+              i.icon.file
+              input(type='file', style='display:none', name='lezhi-file-upload').lezhi-file-input#lezhi-file-upload
+
     script(src='/libs/js/jquery.min.js')
     script(src='/libs/js/semantic.min.js')
+    script(src='/javascripts/nav_controller.js')
+    script(src='/javascripts/file_input_controller.js')
     block pageScripts

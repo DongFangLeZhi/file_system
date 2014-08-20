@@ -17,6 +17,7 @@ body #lezhi-nav {
 body #lezhi-nav .item {
   color: #fffcec;
   padding: 20px 30px 10px 30px;
+  cursor: pointer;
 }
 body #lezhi-nav .item .icon {
   opacity: 1;
@@ -91,7 +92,7 @@ body #lezhi-nav .nav-search .nav-search-icon {
   right: 0;
 }
 .container {
-  margin: 0 15%;
+  margin: 0 10%;
 }
 .page {
   padding-top: 20px;
@@ -131,4 +132,17 @@ body #lezhi-nav .nav-search .nav-search-icon {
 .login-logo {
   font-weight: 500px;
   font-size: 3em;
+}
+#upload-sidebar {
+  background-color: #fffcec;
+  color: #eb593c;
+}
+.lezhi-input-label {
+  margin-bottom: 0.5em;
+}
+#file-upload-form {
+  margin-top: 1.3em;
+}
+#lezhi-file-upload-name {
+  border-color: #eb593c;
 }
