@@ -143,6 +143,12 @@ body #lezhi-nav .nav-search .nav-search-icon {
 #file-upload-form {
   margin-top: 1.3em;
 }
-#lezhi-file-upload-name {
+#file-upload-form .input-display {
   border-color: #eb593c;
+}
+#file-upload-form .selection,
+#file-upload-form .item,
+#file-upload-form .dropdown,
+#file-upload-form .text {
+  color: #eb593c;
 }

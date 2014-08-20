@@ -4,7 +4,16 @@
     .field
       .lezhi-input-label 选择文件
       .ui.action.input
-        input.lezhi-file-input-name#lezhi-file-upload-name(type='text', disabled)
+        input.lezhi-file-input-name#lezhi-file-upload-name(type='text', disabled).input-display
         label(for='lezhi-file-upload').ui.icon.button.lezhi-button.lezhi-file-btn
           i.icon.file
           input(type='file', style='display:none', name='lezhi-file-upload').lezhi-file-input#lezhi-file-upload
+
+    .field
+      .lezhi-input-label 选择项目
+      .ui.selection.dropdown.input-display
+        input(type='hidden', name='project')
+        .default.text 项目选项
+        i.icon.dropdown
+        .menu
+          .item(data-value='psudo') test

@@ -35,3 +35,5 @@ $('.lezhi-file-btn :file').on('fileselect', function(event, numFiles, label, siz
         $('#lezhi-file-upload').removeAttr('name'); // cancel upload file.
     }
 });
+
+$('.ui.selection.dropdown').dropdown();
