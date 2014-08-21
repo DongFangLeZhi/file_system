@@ -7,14 +7,26 @@
         input.lezhi-file-input-name#lezhi-file-upload-name(type='text', disabled).input-display
         label(for='lezhi-file-upload').ui.icon.button.lezhi-button.lezhi-file-btn
           i.icon.file
-          input(type='file', style='display:none', name='lezhi-file-upload').lezhi-file-input#lezhi-file-upload
+          input(type='file', style='display:none', name='fileUpload').upload-input.lezhi-file-input#lezhi-file-upload
 
     .field
       .lezhi-input-label 选择项目
       .ui.selection.fluid.dropdown.input-display
-        input(type='hidden', name='project')
+        input(type='hidden', name='project').upload-input
         .default.text 项目选项
         i.icon.dropdown
         .menu
           for p in projects
             .item(data-value='#{p}') #{p}
+
+    .field
+      .lezhi-input-label 设置访问权限
+      .ui.selection.fluid.dropdown.input-display
+        input(type='hidden', name='topClearance').upload-input
+        .default.text 权限选项
+        i.icon.dropdown
+        .menu
+          for c, index in clearance
+            if index >= user.clearance
+              .item(data-value='#{index}') #{c}
+     a(href="#")#upload-submit.ui.button.lezhi-button.fluid 上传

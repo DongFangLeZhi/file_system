@@ -1,12 +1,12 @@
 var api = require('./routes/endpoints/api')
 var bodyParser = require('body-parser');
+var config = require('./config.json')
 var cookieParser = require('cookie-parser');
 var errorhandler = require('errorhandler');
 var express = require('express');
 var favicon = require('static-favicon');
 var logger = require('morgan');
 var path = require('path');
-var projectJson = require('./config.json')
 var mongoose = require('mongoose');
 var routes = require('./routes/index');
 var session = require('express-session');
@@ -14,7 +14,8 @@ var session = require('express-session');
 app = express();
 mongoose.connect("mongodb://localhost/lezhi_DB");
 
-app.locals.projects = projectJson.project
+app.locals.projects = config.project;
+app.locals.clearance = config.clearance;
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');

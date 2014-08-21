@@ -18,7 +18,7 @@ $(document).on('change', '.lezhi-file-btn :file', function() {
 });
 
 $('.lezhi-file-btn :file').on('fileselect', function(event, numFiles, label, size) {
-    $('#lezhi-file-upload').attr('name', 'lezhi-file-upload'); // allow upload.
+    $('#lezhi-file-upload').attr('name', 'fileUpload'); // allow upload.
     console.log("asdf");
     var postfix = label.substr(label.lastIndexOf('.'));
     if (fileExtentionRange.indexOf(postfix.toLowerCase()) > -1) {

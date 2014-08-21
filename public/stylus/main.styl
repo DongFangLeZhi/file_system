@@ -1,6 +1,7 @@
 lezhi-blue = #abdcd6
 lezhi-red = #eb593c
 lezhi-light-yellow = #fffcec
+lezhi-light-red = #e73b18
 
 html
   height 100%
@@ -129,10 +130,11 @@ body
       width 100%
 
 .ui.button.lezhi-button
-  background-color #eb593c
+  background-color lezhi-red
   color #ffffff
   &:hover
-    color #e0e0e0
+    color #ffffff
+    background-color lezhi-light-red
 
 .login-logo
   font-weight 500px;
@@ -166,3 +168,6 @@ body
 
   .text
     font-size .8em
+
+#upload-submit
+  margin-top 30px

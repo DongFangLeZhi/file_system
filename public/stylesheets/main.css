@@ -127,7 +127,8 @@ body #lezhi-nav .nav-search .nav-search-icon {
   color: #fff;
 }
 .ui.button.lezhi-button:hover {
-  color: #e0e0e0;
+  color: #fff;
+  background-color: #e73b18;
 }
 .login-logo {
   font-weight: 500px;
@@ -165,4 +166,7 @@ body #lezhi-nav .nav-search .nav-search-icon {
 }
 #file-upload-form .text {
   font-size: 0.8em;
+}
+#upload-submit {
+  margin-top: 30px;
 }
