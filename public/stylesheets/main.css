@@ -145,10 +145,24 @@ body #lezhi-nav .nav-search .nav-search-icon {
 }
 #file-upload-form .input-display {
   border-color: #eb593c;
+  background-color: #fff;
 }
 #file-upload-form .selection,
 #file-upload-form .item,
 #file-upload-form .dropdown,
 #file-upload-form .text {
   color: #eb593c;
+}
+#file-upload-form .ui.dropdown,
+#file-upload-form .ui.dropdown:hover,
+#file-upload-form .visible {
+  box-shadow: 0 0 0 1px #eb593c !important;
+  -webkit-box-shadow: 0 0 0 1px #eb593c !important;
+  -moz-box-shadow: 0 0 0 1px #eb593c !important;
+}
+#file-upload-form .item {
+  border-top: solid 1px rgba(235,89,60,0.5);
+}
+#file-upload-form .text {
+  font-size: 0.8em;
 }
